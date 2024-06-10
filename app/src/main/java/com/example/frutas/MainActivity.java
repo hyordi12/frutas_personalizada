@@ -1,6 +1,5 @@
 package com.example.frutas;
 
-
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -8,7 +7,7 @@ import android.widget.TextView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements FrutasAdapter.OnTotalChangeListener {
@@ -23,13 +22,12 @@ public class MainActivity extends AppCompatActivity implements FrutasAdapter.OnT
 
         tvTotal = findViewById(R.id.tvTotal);
 
-        List<Fruta> frutas = Arrays.asList(
-                new Fruta("Manzana", 10, "Una manzana roja dulce", false),
-                new Fruta("Banana", 8, "Una banana amarilla jugosa", false),
-                new Fruta("Cereza", 5, "Cerezas rojas tiernas", false),
-                new Fruta("Fresa", 9, "Fresas rojas sabrosas", false),
-                new Fruta("Uva", 15, "Uvas verdes jugosas", false)
-        );
+        List<Fruta> frutas = new ArrayList<>();
+        frutas.add(new Fruta(getString(R.string.manzana), 10, getString(R.string.descripcion_manzana), false));
+        frutas.add(new Fruta(getString(R.string.banana), 8, getString(R.string.descripcion_banana), false));
+        frutas.add(new Fruta(getString(R.string.cereza), 5, getString(R.string.descripcion_cereza), false));
+        frutas.add(new Fruta(getString(R.string.fresa), 9, getString(R.string.descripcion_fresa), false));
+        frutas.add(new Fruta(getString(R.string.uva), 15, getString(R.string.descripcion_uva), false));
 
         recyclerViewFrutas = findViewById(R.id.recyclerViewFrutas);
         recyclerViewFrutas.setLayoutManager(new LinearLayoutManager(this));

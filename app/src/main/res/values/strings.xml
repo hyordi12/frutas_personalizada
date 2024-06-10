@@ -1,5 +1,17 @@
 <resources>
     <string name="app_name">Frutas</string>
     <string name="fruta_imagen">Descripción de la imagen de la fruta</string>
+    <string name="manzana">Manzana</string>
+    <string name="banana">Banana</string>
+    <string name="cereza">Cereza</string>
+    <string name="fresa">Fresa</string>
+    <string name="uva">Uva</string>
+    <string name="descripcion_manzana">Una manzana roja dulce</string>
+    <string name="descripcion_banana">Una banana amarilla jugosa</string>
+    <string name="descripcion_cereza">Cerezas rojas tiernas</string>
+    <string name="descripcion_fresa">Fresas rojas sabrosas</string>
+    <string name="descripcion_uva">Uvas verdes jugosas</string>
+
+
 
 </resources>
